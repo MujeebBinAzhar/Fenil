@@ -13,132 +13,162 @@
         crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+          .img-thumbnail {
+            cursor: pointer;
+        }
+        .modal-img {
+            width: 100%;
+        }
+    </style>
 </head>
 
-<body> 
+<body>
 
 
     <div class="container">
         <div class="row py-4 align-items-center nav-marg-top">
             <div class="col">
-                <img src="./assets/images/logo.png.png" alt="" class="main-logo-width" >
+                <img src="./assets/images/logo.png.png" alt="" class="main-logo-width">
             </div>
             <div class="col media-text-end">
-                <button class="bg-transparent  cont-btn-margn " >Contact Now</button>
+                <button class="bg-transparent  cont-btn-margn ">Contact Now</button>
             </div>
         </div>
     </div>
     <div class="nav-start">
         <nav class="container navbar navbar-expand-lg navbar-light">
             <div class="container nav-media-end">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav gap-4 ">
-                    <li class="nav-item ">
-                        <a class="nav-link text-white " aria-current="page" href="/index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white " href="#" id="navbarDropdownMenuLink"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            My Story
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="./personal-life.html">Personal</a></li>
-                            <li><a class="dropdown-item" href="./professional-life.html">Professional</a></li>
-                            <li><a class="dropdown-item" href="./30-years-of-matchmaking.html">30 Year Journey</a></li>
-                            <li><a class="dropdown-item" href="./the-marriages-of-india.html">The Marriages of India </a></li>
-                            <li><a class="dropdown-item" href="./biography.html">Biography </a></li>
-                        </ul>
-                    </li>
-                   
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white " href="#" id="navbarDropdownMenuLink"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Services
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="/services-1-matchmaking.html">Matchmaking</a></li>
-                            <li><a class="dropdown-item" href="/services-2-marriage-consulting.html">Marriage Consulting</a></li>
-                            <li><a class="dropdown-item" href="/services-3-matchmaking-for-nris.html">Matchmaking For NRIs</a></li>
-                            <li><a class="dropdown-item" href="/Services-4-one-to-one-sessions.html">One-To-One Sessions</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="/award.html">Awards</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white " href="#" id="navbarDropdownMenuLink"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Media
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Articles + Media Links</a></li>
-                            <li><a class="dropdown-item" href="#">Videos</a></li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img src="./assets/icons/menu-alt-01-svgrepo-com.svg" alt="">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav gap-4 ">
+                        <li class="nav-item ">
+                            <a class="nav-link text-white " aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white " href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                My Story
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./personal-life.html">Personal</a></li>
+                                <li><a class="dropdown-item" href="./professional-life.html">Professional</a></li>
+                                <li><a class="dropdown-item" href="./30-years-of-matchmaking.html">30 Year Journey</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./the-marriages-of-india.html">The Marriages of India
+                                    </a></li>
+                                 <li><a class="dropdown-item" href="./biography1.html">Biography 1</a></li>                             <li><a class="dropdown-item" href="./biography2.html">Biography 2</a></li>
                             </ul>
-                    </li>
-                   
-                    <li class="nav-item">
-                        <a class="nav-link text-white " href="/sucess-stories.html">Success Stories</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white " href="#" id="navbarDropdownMenuLink"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Events
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Magazine Launch</a></li>
-                            <li><a class="dropdown-item" href="#">Get-Togethers</a></li>
-                            </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Testimonials</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Gallery</a>
-                    </li>
-                    
-                   
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            More
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">FAQs</a></li>
-                            <li><a class="dropdown-item" href="/alm-promise.html">ALM Promise</a></li>
-                            <li><a class="dropdown-item" href="#">Fees</a></li>
-                            <li><a class="dropdown-item" href="#">Blog</a></li>
-                            <li><a class="dropdown-item" href="#">Well Wishers </a></li>
-                            <li><a class="dropdown-item" href="#">Fees</a></li>
+                        </li>
 
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white " href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="/services-1-matchmaking.html">Matchmaking</a></li>
+                                <li><a class="dropdown-item" href="/services-2-marriage-consulting.html">Marriage
+                                        Consulting</a></li>
+                                <li><a class="dropdown-item" href="/services-3-matchmaking-for-nris.html">Matchmaking
+                                        For NRIs</a></li>
+                                <li><a class="dropdown-item" href="/Services-4-one-to-one-sessions.html">One-To-One
+                                        Sessions</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/award.html">Awards</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white " href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Media
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Articles + Media Links</a></li>
+                                <li><a class="dropdown-item" href="#">Videos</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white " href="/sucess-stories.html">Success Stories</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white " href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Events
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Magazine Launch</a></li>
+                                <li><a class="dropdown-item" href="#">Get-Togethers</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Testimonials</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Gallery</a>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">FAQs</a></li>
+                                <li><a class="dropdown-item" href="/alm-promise.html">ALM Promise</a></li>
+                                <li><a class="dropdown-item" href="#">Fees</a></li>
+                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                                <li><a class="dropdown-item" href="#">Well Wishers </a></li>
+                                <li><a class="dropdown-item" href="#">Fees</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </div>
-  
-    <div class="container">
-        <div class="center">
-            <div class="row">
-                <div class="col-md-12 py-5">
-                    <img src="./assets/images/the-marriages-of-india.jpeg" class="w-100" alt="">
+
+    <div class="container my-3 my-lg-5">
+        <div class="row center" id="image-container"></div>
+        <div class="text-center my-4">
+            <button id="load-more" class="btn btn-primary">Load More</button>
+        </div>
+    </div>
+    
+    <!-- Modal for displaying larger images -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Image</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modal-img" class="modal-img" src="" alt="Image">
                 </div>
             </div>
         </div>
     </div>
+    
 
     <div class="main-footeerr ">
         <div class="pt-3">
             <div class="upper-footer-background section-5">
                 <div class="upper-footer appointment">
-                    <h1 class="ubuntu-font mb-4 pb-3">Are you ready to transform your Marriage and Relationship? Book a session
+                    <h1 class="ubuntu-font mb-4 pb-3">Are you ready to transform your Marriage and Relationship? Book a
+                        session
                         with us
                     </h1>
                     <a href="#" class="">
@@ -215,6 +245,38 @@
         </div>
     </div>
 
+
+    <script>
+        let imagesLoaded = 0;
+        const imagesPerLoad = 9;
+        const totalImages = 61;
+    
+        function loadImages() {
+            const container = document.getElementById('image-container');
+            for (let i = 0; i < imagesPerLoad; i++) {
+                if (imagesLoaded >= totalImages) {
+                    document.getElementById('load-more').style.display = 'none';
+                    break;
+                }
+                const img = document.createElement('img');
+                img.src = `./assets/images/the-marriages-of-india-magazine/marriages-of-india${imagesLoaded + 1}.jpg`;
+                img.className = 'col-12 col-sm-6 col-md-4 col-lg-3 m-3 img-thumbnail';
+                img.alt = `marriages-of-india${imagesLoaded + 1}`;
+                img.setAttribute('data-bs-toggle', 'modal');
+                img.setAttribute('data-bs-target', '#imageModal');
+                img.onclick = function() {
+                    document.getElementById('modal-img').src = this.src;
+                };
+                container.appendChild(img);
+                imagesLoaded++;
+            }
+        }
+    
+        document.getElementById('load-more').addEventListener('click', loadImages);
+    
+        // Load initial images
+        loadImages();
+    </script>
 </body>
 
 </html>
