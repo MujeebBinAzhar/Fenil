@@ -7,6 +7,65 @@
 @import url("//cdn.rawgit.com/rtaibah/dubai-font-cdn/master/dubai-font.css");
 
 
+
+
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - The Seasons';
+    src: url('FONTSPRINGDEMO-TheSeasonsBold.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-TheSeasonsBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - The Seasons';
+    src: url('FONTSPRINGDEMO-TheSeasonsLightRegular.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-TheSeasonsLightRegular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - The Seasons';
+    src: url('../font/FONTSPRINGDEMO-TheSeasonsItalic.woff2') format('woff2'),
+        url('../font/FONTSPRINGDEMO-TheSeasonsItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - The Seasons';
+    src: url('../font/FONTSPRINGDEMO-TheSeasonsBoldItalic.woff2') format('woff2'),
+        url('../font/FONTSPRINGDEMO-TheSeasonsBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - The Seasons';
+    src: url('../font/FONTSPRINGDEMO-TheSeasonsRegular.woff2') format('woff2'),
+        url('../font/FONTSPRINGDEMO-TheSeasonsRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - The Seasons';
+    src: url('../font/FONTSPRINGDEMO-TheSeasonsLightItalic.woff2') format('woff2'),
+        url('../font/FONTSPRINGDEMO-TheSeasonsLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
 :root {
     --color-text: hsl(248, 10%, 40%);
     --color-text-muted: hsl(248, 10%, 40%);
@@ -649,7 +708,7 @@ footer .btn-outline-light:hover {
 
 /* home hero end */
 .our-story {
-    margin-top: -350px;
+    margin-top: -390px;
     padding-bottom: 50px;
 }
 
@@ -722,7 +781,7 @@ footer .btn-outline-light:hover {
 /*our story end  */
 
 .underlined-heading h2 {
-    font-family: "FONTSPRING DEMO - The Seasons";
+    font-family: 'FONTSPRING DEMO - The Seasons';
     font-size: 40px;
     font-weight: 400;
     line-height: 46px;
@@ -730,6 +789,7 @@ footer .btn-outline-light:hover {
     color: #6108B2;
     position: relative;
     margin-bottom: 15px;
+    text-transform: uppercase;
     width: 32%;
     text-align: right;
 }
@@ -750,23 +810,35 @@ footer .btn-outline-light:hover {
     margin: 60px 0px;
 }
 
-.sub-logo {
-    width: 15%;
-    height: 110px;
-
+.main-ul{
+    display: flex;
+    list-style: none;
+     padding: 2rem 0;
+    padding: 0;
+    margin: 0;
 }
 
-.sub-logo img {
-    height: 100%;
-    aspect-ratio: 3 / 4;
-    object-fit: contain;
+.main-ul li{
+    margin: 2rem 3rem;
+    display: grid;
+    place-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+ 
+
+.main-ul li img{
+    min-width: 200px;
 }
 
-/* feature end */
+ 
 
+ 
 .we-do-main {
     background: linear-gradient(101.85deg, #F935A5 2.7%, #931F61 95.47%);
     padding: 41px 60px;
+    z-index: 9999999;
+    position: relative;
 }
 
 .image-inner {
@@ -774,10 +846,16 @@ footer .btn-outline-light:hover {
     border-radius: 17px;
 
 }
+.videos{
+    border-radius: 1rem;
+    width: 100%;
+    min-height: 500px;
+}
 
+ 
 .image-inner h2 {
     background-color: white;
-    font-family: "FONTSPRING DEMO - The Seasons", sans-serif;
+    font-family: 'FONTSPRING DEMO - The Seasons';
     font-size: 19px;
     font-weight: 700;
     line-height: 28.8px;
@@ -790,22 +868,34 @@ footer .btn-outline-light:hover {
     align-items: center;
     display: flex;
 }
-
+.image-inner-1{
+    border-radius: 17px;
+    overflow: hidden;
+}
 .image-inner-1 h2 {
     background-color: white;
-    font-family: "FONTSPRING DEMO - The Seasons", sans-serif;
+    font-family: 'FONTSPRING DEMO - The Seasons';
     font-size: 19px;
-    font-weight: 700;
-    line-height: 28.8px;
-    min-height: 155px;
+   
+   min-height: 118px;
+     
     justify-content: center;
     text-align: center;
     align-items: center;
     display: flex;
     color: #6108B2;
-    padding: 20px 5px;
+    padding: 0.8rem;
     border-radius: 0px 0px 17px 17px;
-    text-transform: uppercase;
+    text-transform: capitalize;
+}
+
+.award-card{
+    z-index: 99999;
+    position: relative;
+}
+
+.award-card a{
+    z-index: 9999999999;
 }
 
 /* what we do end */
@@ -886,7 +976,8 @@ footer .btn-outline-light:hover {
 }
 
 .testi-heading h2 {
-    font-family: "FONTSPRING DEMO - The Seasons", sans-serif;
+    font-family: 'FONTSPRING DEMO - The Seasons';
+    text-transform: uppercase;
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
@@ -948,7 +1039,7 @@ footer .btn-outline-light:hover {
 /*  */
 .alm-heading h2 {
     color: #6108B2;
-    font-family: "FONTSPRING DEMO - The Seasons", sans-serif;
+    font-family: 'FONTSPRING DEMO - The Seasons';
     font-size: 36px;
     font-weight: 700;
     line-height: 44px;
@@ -995,6 +1086,8 @@ footer .btn-outline-light:hover {
     font-weight: 400;
     line-height: 20px;
     text-align: center;
+    color: #717171 !important;
+
 
 }
 
@@ -1046,8 +1139,8 @@ footer .btn-outline-light:hover {
 
 .iner-link {
     font-family: "Inter", sans-serif;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 1rem;
+    /* font-weight: 600; */
     line-height: 28px;
     text-align: center;
     padding: 30px 20px;
@@ -2522,10 +2615,8 @@ footer .btn-outline-light:hover {
         text-align: left;
     }
 
-    .image-inner-1 h2 {
-        min-height: 180px;
-    }
-
+   
+   
     .our-story {
         margin-top: -420px;
     }
@@ -2636,6 +2727,7 @@ footer .btn-outline-light:hover {
         margin-top: -480px;
         z-index: -1;
         position: relative;
+        z-index: 99999;
     }
 }
 
@@ -2649,6 +2741,7 @@ footer .btn-outline-light:hover {
         margin-top: -400px;
         z-index: -1;
         position: relative;
+        z-index: 99999999;
     }
 
 }
@@ -2662,6 +2755,7 @@ footer .btn-outline-light:hover {
         margin-top: -300px;
         z-index: -1;
         position: relative;
+        z-index: 9999999;
     }
 
 }
@@ -2838,6 +2932,7 @@ footer .btn-outline-light:hover {
         margin-top: -165px;
         z-index: -1;
         position: relative;
+        z-index: 9999999;
     }
 
     .w-83 {
