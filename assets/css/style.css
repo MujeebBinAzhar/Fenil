@@ -1,14 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
-@import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
-
-@import url("//cdn.rawgit.com/rtaibah/dubai-font-cdn/master/dubai-font.css");
-
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @font-face {
     font-family: 'FONTSPRING DEMO - The Seasons';
@@ -83,6 +73,9 @@ a {
     text-decoration: none !important;
 }
 
+p{
+    font-family: "Poppins", sans-serif !important;
+}
 .archivo-font {
     font-family: "Archivo", sans-serif;
 }
@@ -108,7 +101,7 @@ a {
 }
 
 .color-purpel {
-    color: #6108B2;
+    color: #6108B2 !important;
 }
 
 .f-60 {
@@ -990,7 +983,8 @@ footer .btn-outline-light:hover {
     padding: 40px 30px 20px 30px;
     position: relative;
     border-radius: 20px;
-    height: 100%;
+    height: 250px ;
+    margin: 55px 20px 50px 20px;
 }
 
 .person-img {
@@ -1077,8 +1071,8 @@ footer .btn-outline-light:hover {
 
 .alm-inner {
     box-shadow: 0px 2px 4px 0px #6108B24D;
-    padding: 24px 16px;
-    height: 100%;
+    padding: 24px 46px;
+    margin: 40px;
     border-radius: 17px;
 }
 
@@ -1632,13 +1626,13 @@ footer .btn-outline-light:hover {
 }
 
 .accordion__btn:hover {
-    color: var(--color-purple);
+    color: #6108B2;
     background: hsl(248, 53%, 97%);
 }
 
 .accordion__item--active .accordion__btn {
-    color: var(--color-purple);
-    border-bottom: 2px solid var(--color-purple);
+    color: #6108B2;
+    border-bottom: 2px solid #6108B2;
     background: hsl(248, 53%, 97%);
 }
 
@@ -2567,6 +2561,16 @@ footer .btn-outline-light:hover {
         font-size: 0.9rem;
         z-index: 10;
     }
+    .fee-heading{
+        font-size: 30px;
+        font-weight: 700;
+        color: #6108B2;
+        text-align: center;
+    }
+    .fee-para{
+        text-align: center;
+        
+    }
 
 @media only screen and (max-width: 2500px) {
     .home-hero {
@@ -2630,7 +2634,9 @@ footer .btn-outline-light:hover {
         width: 100%;
         text-align: left;
     }
-
+    .inner-1{
+        height: 300px;
+    }
    
    
     .our-story {
@@ -2787,12 +2793,19 @@ footer a{
         position: relative;
        
     }
+    .inner-1{
+        height: 390px;
+     }
+   
 
 }
 
 @media only screen and (max-width: 1100px) {
     .indx-footer {
         margin-top: 10% !important;
+    }
+    .inner-1{
+        height: 100%;
     }
 
     .about-hero {
