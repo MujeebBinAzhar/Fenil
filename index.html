@@ -41,32 +41,65 @@
   <title>Home</title>
 
   <style>
-    
-  .slick-prev,
-  .slick-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 30px;
-    z-index: 1;
-    cursor: pointer;
-  }
+    .auto-slider-section {
+      width: 100%;
+      overflow: hidden;
+    }
 
-  .slick-prev {
-    left: -50px; /* Adjust the position as needed */
-  }
- 
+    article {
+      display: flex;
+      width: 200%;
+      animation: bannermove 20s linear infinite;
+    }
 
-  .slick-next {
-    right: -25px; /* Adjust the position as needed */
+    article.paused {
+      -webkit-animation-play-state: paused;
+      animation-play-state: paused;
+    }
 
-  }
-  
 
-.slick-prev:before, .slick-next:before {
-  color: #6108B2;
-  font-size:30px;
-  }
+
+    @keyframes bannermove {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+
+
+
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 30px;
+      z-index: 1;
+      cursor: pointer;
+    }
+
+    .slick-prev {
+      left: -50px;
+      /* Adjust the position as needed */
+    }
+
+
+    .slick-next {
+      right: -25px;
+      /* Adjust the position as needed */
+
+    }
+
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: #6108B2;
+      font-size: 30px;
+    }
 
 
     .slick-dots li button:before {
@@ -128,15 +161,18 @@
       .story-heading h2 {
         font-size: 50px;
       }
+
       .slick-prev {
-    left: -14px; /* Adjust the position as needed */
-  }
- 
+        left: -14px;
+        /* Adjust the position as needed */
+      }
 
-  .slick-next {
-    right: 20px; /* Adjust the position as needed */
 
-  }
+      .slick-next {
+        right: 20px;
+        /* Adjust the position as needed */
+
+      }
 
       .sub-logo {
         width: 40%;
@@ -231,7 +267,7 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
-                My Story
+                About
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li>
@@ -367,7 +403,7 @@
     <div class="container">
       <div class="story-heading pb-40 text-center">
         <span class="sub"> KNOW <mark>WHAT IS </mark> </span>
-        <h2>OUR STORY</h2>
+        <h2>MY STORY</h2>
       </div>
       <div class="story-para pb-40">
         <p>
@@ -395,45 +431,49 @@
     </div>
   </section>
 
-  <section class="feature over-flow-hidden">
+  <section class="feature over-flow-hidden ">
     <div class="container">
       <div class="underlined-heading">
         <h2>AS FEATURED IN</h2>
       </div>
 
-      <marquee behavior="scroll" direction="left">
-        <div class="logo-gallery">
-          <ul class="main-ul">
-            <li class="sub-logo">
-              <img src="./assets/images/The Times Of India Logo.png" class="img-fluid" alt="" />
-            </li>
+      <section class="auto-slider-section">
+        <article>
+          <div>
+            <div class="logo-gallery">
+              <ul class="main-ul">
+                <li class="sub-logo">
+                  <img src="./assets/images/The Times Of India Logo.png" class="img-fluid" alt="" />
+                </li>
 
-            <li class="sub-logo">
-              <img src="./assets/images/The Indian Express - Logo.jpg" class="img-fluid" alt="" />
-            </li>
+                <li class="sub-logo">
+                  <img src="./assets/images/The Indian Express - Logo.jpg" class="img-fluid" alt="" />
+                </li>
 
-            <li class="sub-logo">
-              <img src="./assets/images//FEMINA Logo.jpg" class="img-fluid" alt="" />
-            </li>
+                <li class="sub-logo">
+                  <img src="./assets/images//FEMINA Logo.jpg" class="img-fluid" alt="" />
+                </li>
 
-            <li class="sub-logo">
-              <img src="./assets/images/Mid-day Logo.png" class="img-fluid" alt="" />
-            </li>
+                <li class="sub-logo">
+                  <img src="./assets/images/Mid-day Logo.png" class="img-fluid" alt="" />
+                </li>
 
-            <li class="sub-logo">
-              <img src="./assets/images/Forbes India Logo.png" class="img-fluid" alt="" />
-            </li>
+                <li class="sub-logo">
+                  <img src="./assets/images/Forbes India Logo.png" class="img-fluid" alt="" />
+                </li>
 
-            <li class="sub-logo">
-              <img src="./assets/images/Hindustan Times Logo.png" class="img-fluid" alt="" />
-            </li>
+                <li class="sub-logo">
+                  <img src="./assets/images/Hindustan Times Logo.png" class="img-fluid" alt="" />
+                </li>
 
-            <li class="sub-logo">
-              <img src="./assets/images/Medium Logo.png" class="img-fluid" alt="" />
-            </li>
-          </ul>
-        </div>
-      </marquee>
+                <li class="sub-logo">
+                  <img src="./assets/images/Medium Logo.png" class="img-fluid" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
     </div>
   </section>
 
@@ -536,7 +576,7 @@
               <a target="_blank" href="#">
                 <div class="image-inner-1">
                   <img src="./assets/images/amitab.png" width="100%" alt="" />
-                  <h2>Priya Shah felicitating Shri Amitabh Bachchan</h2>
+                  <h2 class="px-lg-5">Priya Shah felicitating Shri Amitabh Bachchan</h2>
                 </div>
               </a>
             </div>
@@ -546,7 +586,7 @@
               <a target="_blank" href="#">
                 <div class="image-inner-1">
                   <img src="./assets/images/magzine.png" width="100%" alt="" />
-                  <h2>Hema Malini launches Priya Shah’s wedding magazine</h2>
+                  <h2 class="px-lg-4">Hema Malini launches Priya Shah’s wedding magazine</h2>
                 </div>
               </a>
             </div>
@@ -661,7 +701,7 @@
       <button class="slick-next" aria-label="Next" type="button">Next</button>
     </div>
   </section>
-  
+
 
   <section class="artical mt-5">
     <div class="container">
@@ -995,7 +1035,7 @@
                     </h1>
                     <a href="#" class="">
                         <button>
-                            Make an Appointment
+                            Contact Now
                         </button>
                     </a>
                 </div>
@@ -1033,14 +1073,14 @@
               <div class="ms-lg-5">
                 <h5 class="footer-heading">Company</h5>
                 <ul class="list-unstyled popins">
-                  <li><a href="#" class="text-light">Home</a></li>
-                  <li><a href="#" class="text-light">Our Story</a></li>
-                  <li><a href="#" class="text-light">Services</a></li>
-                  <li><a href="#" class="text-light">Awards</a></li>
-                  <li><a href="#" class="text-light">Success Stories</a></li>
-                  <li><a href="#" class="text-light">Testimonials</a></li>
-                  <li><a href="#" class="text-light">Blog</a></li>
-                  <li><a href="#" class="text-light">FAQs</a></li>
+                  <li><a href="./index.html" class="text-light">Home</a></li>
+                  <li><a href="./personal-life.html" class="text-light">Our Story</a></li>
+                  <li><a href="./services-1-matchmaking.html" class="text-light">Services</a></li>
+                  <li><a href="./award.html" class="text-light">Awards</a></li>
+                  <li><a href="./sucess-stories.html" class="text-light">Success Stories</a></li>
+                  <li><a href="./testmonials.html" class="text-light">Testimonials</a></li>
+                  <li><a href="./blog.html" class="text-light">Blog</a></li>
+                  <li><a href="./faqs.html" class="text-light">FAQs</a></li>
                 </ul>
               </div>
             </div>
@@ -1049,7 +1089,7 @@
                 <h5 class="footer-heading">Legal</h5>
                 <ul class="list-unstyled">
                   <li>
-                    <a href="#" class="text-light popins">Terms & Conditions</a>
+                    <a href="" class="text-light popins">Terms & Conditions</a>
                   </li>
                   <li>
                     <a href="#" class="text-light popins">Privacy Policy</a>
@@ -1060,7 +1100,7 @@
             <div class="col-md-4">
               <div class="">
                 <h5 class="footer-heading">
-                  Ready to find your perfect match?
+                  Ready to find your <br> perfect match?
                 </h5>
                 <a href="#" class="btn btn-outline-light mb-3">Contact us, Today!
                   <span class="ms-4"><i class="fa-regular fa-paper-plane"></i></span></a>
@@ -1114,38 +1154,40 @@
     });
   </script>
   <script type="text/javascript">
-    $(document).ready(function(){
-        $('.promise-slider').slick({
-            slidesToShow: 3,  // Show three slides at a time
-            slidesToScroll: 1, // Scroll one slide at a time
-            infinite: true,    // Infinite scrolling
-            dots: false,        // Show navigation dots
-            arrows: true,      // Use arrows for navigation
-            prevArrow: $('.slick-prev'), // Custom previous button
-            nextArrow: $('.slick-next'), // Custom next button
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                },
-            ]
-        });
+    $(document).ready(function () {
+      $('.promise-slider').slick({
+        slidesToShow: 3,  // Show three slides at a time
+        slidesToScroll: 1, // Scroll one slide at a time
+        infinite: true,    // Infinite scrolling
+        dots: false,        // Show navigation dots
+        arrows: true,      // Use arrows for navigation
+        prevArrow: $('.slick-prev'), // Custom previous button
+        nextArrow: $('.slick-next'), // Custom next button
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+        ]
+      });
     });
   </script>
-  
 
+  <script>$('button').click(function () {
+      $("article").toggleClass("paused")
+    });</script>
 </body>
 
 </html>

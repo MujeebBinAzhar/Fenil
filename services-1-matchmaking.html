@@ -1,666 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services Matchmaking</title>
-    <!-- bootstrap 5.3.3 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/js/js.js" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="row py-4 align-items-center nav-marg-top">
-        <div class="col">
-          <img
-            src="./assets/images/logo.png.png"
-            alt=""
-            class="main-logo-width"
-          />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services Matchmaking</title>
+  <!-- bootstrap 5.3.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/js/js.js" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row py-4 align-items-center nav-marg-top">
+      <div class="col">
+        <img src="./assets/images/logo.png.png" alt="" class="main-logo-width" />
+      </div>
+      <div class="col media-text-end">
+        <a href="./contact.html">
+          <button class="bg-transparent cont-btn-margn">Contact Now</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="nav-start">
+    <nav class="container navbar navbar-expand-lg navbar-light">
+      <div class="container nav-media-end">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="./assets/icons/menu-alt-01-svgrepo-com.svg" alt="" />
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                About
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="./personal-life.html">Personal</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./professional-life.html">Professional</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./30-years-of-matchmaking.html">30 Year Journey</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./the-marriages-of-india.html">The Marriages of India
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./biography.html">Biography
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="/services-1-matchmaking.html">Matchmaking</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/services-2-marriage-consulting.html">Marriage Consulting</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/services-3-matchmaking-for-nris.html">Matchmaking For NRIs</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Services-4-one-to-one-sessions.html">One-To-One Sessions</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/award.html">Awards</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Media
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="/articles.html">Articles </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/media-video.html">Videos</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/sucess-stories.html">Success Stories</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Events
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="/magazine-launch.html">Magazine Launch</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/get-together.html">Get-Togethers</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./testmonials.html">Testimonials</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./gallery.html">Gallery</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                More
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="./faqs.html">FAQs</a></li>
+                <li>
+                  <a class="dropdown-item" href="/alm-promise.html">ALM Promise</a>
+                </li>
+                <li><a class="dropdown-item" href="/blog.html">Blog</a></li>
+                <li>
+                  <a class="dropdown-item" href="/well-wisher.html">Well Wishers
+                  </a>
+                </li>
+                <li><a class="dropdown-item" href="/fees.html">Fees</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <div class="col media-text-end">
-          <a href="./contact.html">
-            <button class="bg-transparent cont-btn-margn">Contact Now</button>
+      </div>
+    </nav>
+  </div>
+  <div class="bg-lightgra">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mt-5 mb-lg-5 pt-2 pb-lg-4">
+            <h1 class="color-purpel font-services">
+              Finding the Perfect Balance: Arranged + Love Marriages
+            </h1>
+            <div class="pt-3">
+              <p class="servics-para prpl">
+                At the heart of Priya Shah's matchmaking services is a unique
+                philosophy that blends the best aspects of traditional
+                arranged marriages and modern love marriages. Priya
+                understands that each approach has its own strengths and
+                challenges. Traditional arranged marriages, while deeply
+                rooted in cultural practices, often demand compromises from
+                those involved. On the other hand, modern love marriages can
+                sometimes be a blind game, with couples risking compatibility
+                issues and potential dissatisfaction. <br /><br />
+                Priya Shah advocates for a harmonious middle ground: Arrange +
+                Love marriages. She believes that this approach offers the
+                best chance for a successful, happy, and satisfying union. By
+                combining the thoughtful selection process of arranged
+                marriages with the personal connection of love marriages,
+                Priya creates a setting where both families and the candidates
+                themselves can meet, discuss, and understand their
+                compatibility.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 center">
+          <div class="my-4">
+            <img class="round-bdr" src="./assets/images/pexels-andrea-piacquadio-3978564 1 (1).jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-100 bg-color-purpel">
+    <div class="container p-0">
+      <div class="col-md-12">
+        <div class="m-0 pt-2 pb-3 text-white text-center font-48 letter-and-line">
+          Priya Shah’s Matchmaking Process
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row mt-lg-5 py-2">
+      <div class="col-md-4">
+        <div class="step-card p-lg-5 m-3">
+          <div class="icon">
+            <img src="./assets/images/browser-internet-web-network-diagram-1 1.svg" alt="" />
+          </div>
+          <div class="step-title pb-2 pt-0">1. Initial Consultation</div>
+          <div class="step-content">
+            <ul class="p-0">
+              <li class="custom-bullet">
+                <span class="highlight">Personalized Assessment:</span>
+              </li>
+            </ul>
+            <p class="servics-para">
+              Priya begins with a thorough understanding of your preferences,
+              values, and expectations. This initial consultation helps her
+              tailor the matchmaking process to suit your unique needs.
+            </p>
+            <ul class="p-0">
+              <li class="custom-bullet">
+                <span class="highlight">Family Insights:</span>
+              </li>
+            </ul>
+            <p class="servics-para">
+              She also takes into account the perspectives of both families,
+              ensuring that everyone’s hopes and concerns are addressed.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="step-card p-lg-5 m-3">
+          <div class="icon">
+            <img src="./assets/images/Frame.svg" alt="" />
+          </div>
+          <div class="step-title pb-2 pt-0">2. Candidate Selection</div>
+          <div class="step-content">
+            <ul class="p-0">
+              <li class="custom-bullet">
+                <span class="highlight">Curated Matches : </span>
+              </li>
+            </ul>
+            <p class="servics-para">
+              Based on the initial assessment, Priya handpicks potential
+              matches that align with your preferences and family values.
+            </p>
+            <ul class="p-0">
+              <li class="custom-bullet">
+                <span class="highlight">Compatibility Focus :</span>
+              </li>
+            </ul>
+            <p class="servics-para">
+              She uses her extensive network and expertise to ensure that
+              selected candidates have the best chances of compatibility.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="step-card p-lg-5 m-3">
+          <div class="icon">
+            <img src="./assets/images/Frame (1).svg" alt="" />
+          </div>
+          <div class="step-title pb-2 pt-0">3. Facilitated Meet-ups</div>
+          <div class="step-content">
+            <ul class="p-0">
+              <li class="custom-bullet">
+                <span class="highlight"> Controlled Environment : </span>
+              </li>
+            </ul>
+            <p class="servics-para">
+              Meetings between families and candidates are arranged under
+              Priya’s observation to create a comfortable and respectful
+              atmosphere.
+            </p>
+            <ul class="p-0">
+              <li class="custom-bullet">
+                <span class="highlight">Guided Discussions : </span>
+              </li>
+            </ul>
+            <p class="servics-para">
+              She facilitates discussions to help both parties explore
+              important topics such as lifestyle, future plans, and mutual
+              expectations.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center text-left">
+        <div class="col-md-4">
+          <div class="step-card p-lg-5 m-lg-3 step-card-2mar">
+            <div class="icon">
+              <img src="./assets/images/browser-internet-web-network-diagram-1 1 (1).svg" alt="" />
+            </div>
+            <div class="step-title pb-2 pt-0">
+              4. Compatibility Assessment
+            </div>
+            <div class="step-content">
+              <ul class="p-0">
+                <li class="custom-bullet">
+                  <span class="highlight"> In-depth Analysis : </span>
+                </li>
+              </ul>
+              <p class="servics-para">
+                Priya uses various tools and her intuitive skills to assess
+                compatibility, ensuring that both parties have a clear
+                understanding of their potential match.
+              </p>
+              <ul class="p-0">
+                <li class="custom-bullet">
+                  <span class="highlight"> Feedback Loop : </span>
+                </li>
+              </ul>
+              <p class="servics-para">
+                She gathers feedback from both families and candidates to
+                refine the matchmaking process further.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="step-card p-lg-5 m-lg-3 step-card-2mar medtop">
+            <div class="icon">
+              <img src="./assets/images/Frame (2).svg" alt="" />
+            </div>
+            <div class="step-title pb-2 pt-0">5. Final Decision Support</div>
+            <div class="step-content">
+              <ul class="p-0">
+                <li class="custom-bullet">
+                  <span class="highlight"> Decision-Making Guidance : </span>
+                </li>
+              </ul>
+              <p class="servics-para">
+                Priya provides support in making informed decisions, helping
+                both families and candidates navigate this crucial step with
+                confidence.
+              </p>
+              <ul class="p-0">
+                <li class="custom-bullet">
+                  <span class="highlight">Post-Match Follow-Up : </span>
+                </li>
+              </ul>
+              <p class="servics-para">
+                She offers continued support to ensure a smooth transition
+                from matchmaking to marriage, fostering a strong foundation
+                for the relationship.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container service-section">
+    <div class="row">
+      <div class="col-12">
+        <div class="service-title">
+          Why Choose Priya Shah's Matchmaking Services?
+        </div>
+        <div class="center">
+          <div class="service-description">
+            Discover the perfect blend of tradition and modernity with Priya
+            Shah’s matchmaking services, where love and compatibility go hand
+            in hand. Contact us today to begin your journey towards a happy
+            and fulfilling marriage.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 p-0">
+        <div class="service-item">
+          <div class="service-icon">
+            <div class="">
+              <img src="./assets/images/Featured icon.png" alt="" />
+            </div>
+          </div>
+          <div class="service-text">
+            <strong>Expertise and Experience</strong><br />
+            <div class="parp">
+              With years of experience and numerous successful matches, Priya
+              Shah is a trusted name in the matchmaking industry.
+            </div>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">
+            <div class="">
+              <img src="./assets/images/Featured icon (1).png" alt="" />
+            </div>
+          </div>
+          <div class="service-text">
+            <strong>Personalized Attention</strong><br />
+            <div class="parp">
+              Priya's approach is highly personalized, ensuring that every
+              match is made with care and consideration.
+            </div>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">
+            <div class="">
+              <img src="./assets/images/Featured icon (2).png" alt="" />
+            </div>
+          </div>
+          <div class="service-text">
+            <strong>Cultural Sensitivity</strong><br />
+            <div class="parp">
+              Understanding the nuances of cultural expectations and
+              traditions, Priya ensures that these are respected throughout
+              the matchmaking process.
+            </div>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">
+            <div class="">
+              <img src="./assets/images/Featured icon (3).png" alt="" />
+            </div>
+          </div>
+          <div class="service-text">
+            <strong>Holistic Approach</strong><br />
+            <div class="parp">
+              By combining the strengths of arranged and love marriages,
+              Priya's approach aims for long-term happiness and satisfaction.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 p-0">
+        <div class="service-image">
+          <img src="./assets/images/Image-2.png" alt="Couple Image" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-footeerr">
+    <div class="pt-3">
+      <div class="upper-footer-background section-5">
+        <div class="upper-footer appointment">
+          <h1 class="ubuntu-font mb-4 pb-3">
+            Find your perfect match for a lifetime of happiness. Contact us, Today!
+          </h1>
+          <a href="./contact.html" class="">
+            <button>Contact Now</button>
           </a>
         </div>
       </div>
     </div>
-    <div class="nav-start">
-      <nav class="container navbar navbar-expand-lg navbar-light">
-        <div class="container nav-media-end">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <img src="./assets/icons/menu-alt-01-svgrepo-com.svg" alt="" />
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav gap-4">
-              <li class="nav-item">
-                <a
-                  class="nav-link text-white"
-                  aria-current="page"
-                  href="/index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-white"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  My Story
-                </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li>
-                    <a class="dropdown-item" href="./personal-life.html"
-                      >Personal</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./professional-life.html"
-                      >Professional</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./30-years-of-matchmaking.html"
-                      >30 Year Journey</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./the-marriages-of-india.html"
-                      >The Marriages of India
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./biography.html"
-                      >Biography
-                    </a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-white"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Services
-                </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li>
-                    <a class="dropdown-item" href="/services-1-matchmaking.html"
-                      >Matchmaking</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/services-2-marriage-consulting.html"
-                      >Marriage Consulting</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/services-3-matchmaking-for-nris.html"
-                      >Matchmaking For NRIs</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/Services-4-one-to-one-sessions.html"
-                      >One-To-One Sessions</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="/award.html">Awards</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-white"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Media
-                </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li>
-                    <a class="dropdown-item" href="/articles.html">Articles </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/media-video.html">Videos</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link text-white" href="/sucess-stories.html"
-                  >Success Stories</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-white"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Events
-                </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li>
-                    <a class="dropdown-item" href="/magazine-launch.html"
-                      >Magazine Launch</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/get-together.html"
-                      >Get-Togethers</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="./testmonials.html"
-                  >Testimonials</a
-                >
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link text-white" href="./gallery.html">Gallery</a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-white"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  More
-                </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li><a class="dropdown-item" href="./faqs.html">FAQs</a></li>
-                  <li>
-                    <a class="dropdown-item" href="/alm-promise.html"
-                      >ALM Promise</a
-                    >
-                  </li>
-                  <li><a class="dropdown-item" href="/blog.html">Blog</a></li>
-                  <li>
-                    <a class="dropdown-item" href="/well-wisher.html"
-                      >Well Wishers
-                    </a>
-                  </li>
-                  <li><a class="dropdown-item" href="/fees.html">Fees</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <div class="footer-bak-img">
+      <img src="/assets/images/footer 1.png" class="w-100" alt="" />
     </div>
-    <div class="bg-lightgra">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="mt-5 mb-lg-5 pt-2 pb-lg-4">
-              <h1 class="color-purpel font-services">
-                Finding the Perfect Balance: Arranged + Love Marriages
-              </h1>
-              <div class="pt-3">
-                <p class="servics-para prpl">
-                  At the heart of Priya Shah's matchmaking services is a unique
-                  philosophy that blends the best aspects of traditional
-                  arranged marriages and modern love marriages. Priya
-                  understands that each approach has its own strengths and
-                  challenges. Traditional arranged marriages, while deeply
-                  rooted in cultural practices, often demand compromises from
-                  those involved. On the other hand, modern love marriages can
-                  sometimes be a blind game, with couples risking compatibility
-                  issues and potential dissatisfaction. <br /><br />
-                  Priya Shah advocates for a harmonious middle ground: Arrange +
-                  Love marriages. She believes that this approach offers the
-                  best chance for a successful, happy, and satisfying union. By
-                  combining the thoughtful selection process of arranged
-                  marriages with the personal connection of love marriages,
-                  Priya creates a setting where both families and the candidates
-                  themselves can meet, discuss, and understand their
-                  compatibility.
-                </p>
+    <div class="center text-left">
+      <footer class="text-light pt-4 on-media-widthfull">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 pb-3">
+              <div class="footer-first-col">
+                <img src="./assets/images/logo.png.png" alt="Arrange Love Marriage"
+                  class="img-fluid m-0 footer-logo-img" />
               </div>
-            </div>
-          </div>
-          <div class="col-md-6 center">
-            <div class="my-4">
-              <img
-                class="round-bdr"
-                src="./assets/images/pexels-andrea-piacquadio-3978564 1 (1).jpg"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="w-100 bg-color-purpel">
-      <div class="container p-0">
-        <div class="col-md-12">
-          <div
-            class="m-0 pt-2 pb-3 text-white text-center font-48 letter-and-line"
-          >
-            Priya Shah’s Matchmaking Process
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row mt-lg-5 py-2">
-        <div class="col-md-4">
-          <div class="step-card p-lg-5 m-3">
-            <div class="icon">
-              <img
-                src="./assets/images/browser-internet-web-network-diagram-1 1.svg"
-                alt=""
-              />
-            </div>
-            <div class="step-title pb-2 pt-0">1. Initial Consultation</div>
-            <div class="step-content">
-              <ul class="p-0">
-                <li class="custom-bullet">
-                  <span class="highlight">Personalized Assessment:</span>
-                </li>
-              </ul>
-              <p class="servics-para">
-                Priya begins with a thorough understanding of your preferences,
-                values, and expectations. This initial consultation helps her
-                tailor the matchmaking process to suit your unique needs.
-              </p>
-              <ul class="p-0">
-                <li class="custom-bullet">
-                  <span class="highlight">Family Insights:</span>
-                </li>
-              </ul>
-              <p class="servics-para">
-                She also takes into account the perspectives of both families,
-                ensuring that everyone’s hopes and concerns are addressed.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="step-card p-lg-5 m-3">
-            <div class="icon">
-              <img src="./assets/images/Frame.svg" alt="" />
-            </div>
-            <div class="step-title pb-2 pt-0">2. Candidate Selection</div>
-            <div class="step-content">
-              <ul class="p-0">
-                <li class="custom-bullet">
-                  <span class="highlight">Curated Matches : </span>
-                </li>
-              </ul>
-              <p class="servics-para">
-                Based on the initial assessment, Priya handpicks potential
-                matches that align with your preferences and family values.
-              </p>
-              <ul class="p-0">
-                <li class="custom-bullet">
-                  <span class="highlight">Compatibility Focus :</span>
-                </li>
-              </ul>
-              <p class="servics-para">
-                She uses her extensive network and expertise to ensure that
-                selected candidates have the best chances of compatibility.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="step-card p-lg-5 m-3">
-            <div class="icon">
-              <img src="./assets/images/Frame (1).svg" alt="" />
-            </div>
-            <div class="step-title pb-2 pt-0">3. Facilitated Meet-ups</div>
-            <div class="step-content">
-              <ul class="p-0">
-                <li class="custom-bullet">
-                  <span class="highlight"> Controlled Environment : </span>
-                </li>
-              </ul>
-              <p class="servics-para">
-                Meetings between families and candidates are arranged under
-                Priya’s observation to create a comfortable and respectful
-                atmosphere.
-              </p>
-              <ul class="p-0">
-                <li class="custom-bullet">
-                  <span class="highlight">Guided Discussions : </span>
-                </li>
-              </ul>
-              <p class="servics-para">
-                She facilitates discussions to help both parties explore
-                important topics such as lifestyle, future plans, and mutual
-                expectations.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row d-flex justify-content-center text-left">
-          <div class="col-md-4">
-            <div class="step-card p-lg-5 m-lg-3 step-card-2mar">
-              <div class="icon">
-                <img
-                  src="./assets/images/browser-internet-web-network-diagram-1 1 (1).svg"
-                  alt=""
-                />
+              <div class="d-flex flex-column mx-2 mt-3">
+                <div class="f-13">© 2024 Arrange Love Marriage.</div>
+                <div class="f-13">All Rights Reserved.</div>
+                <div class="f-13">Made with ❤️ by Fenil Gala.</div>
               </div>
-              <div class="step-title pb-2 pt-0">
-                4. Compatibility Assessment
+              <div class="social-icons mt-4">
+                <a href="#" class="text-light me-2"><i class="fab fa-instagram center pt-2"></i></a>
+                <a href="#" class="text-light me-2"><i class="fab fa-facebook-f center pt-2"></i></a>
+                <a href="#" class="text-light me-2"><i class="fab fa-twitter center pt-2"></i></a>
+                <a href="#" class="text-light"><i class="fab fa-youtube center pt-2"></i></a>
               </div>
-              <div class="step-content">
-                <ul class="p-0">
-                  <li class="custom-bullet">
-                    <span class="highlight"> In-depth Analysis : </span>
-                  </li>
+            </div>
+            <div class="col-md-3">
+              <div class="ms-lg-5">
+                <h5 class="footer-heading">Company</h5>
+                <ul class="list-unstyled">
+                  <li><a href="./index.html" class="text-light">Home</a></li>
+                  <li><a href="./personal-life.html" class="text-light">Our Story</a></li>
+                  <li><a href="./services-1-matchmaking.html" class="text-light">Services</a></li>
+                  <li><a href="./award.html" class="text-light">Awards</a></li>
+                  <li><a href="./sucess-stories.html" class="text-light">Success Stories</a></li>
+                  <li><a href="./testmonials.html" class="text-light">Testimonials</a></li>
+                  <li><a href="./blog.html" class="text-light">Blog</a></li>
+                  <li><a href="./faqs.html" class="text-light">FAQs</a></li>
                 </ul>
-                <p class="servics-para">
-                  Priya uses various tools and her intuitive skills to assess
-                  compatibility, ensuring that both parties have a clear
-                  understanding of their potential match.
-                </p>
-                <ul class="p-0">
-                  <li class="custom-bullet">
-                    <span class="highlight"> Feedback Loop : </span>
-                  </li>
-                </ul>
-                <p class="servics-para">
-                  She gathers feedback from both families and candidates to
-                  refine the matchmaking process further.
-                </p>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="step-card p-lg-5 m-lg-3 step-card-2mar medtop">
-              <div class="icon">
-                <img src="./assets/images/Frame (2).svg" alt="" />
-              </div>
-              <div class="step-title pb-2 pt-0">5. Final Decision Support</div>
-              <div class="step-content">
-                <ul class="p-0">
-                  <li class="custom-bullet">
-                    <span class="highlight"> Decision-Making Guidance : </span>
-                  </li>
-                </ul>
-                <p class="servics-para">
-                  Priya provides support in making informed decisions, helping
-                  both families and candidates navigate this crucial step with
-                  confidence.
-                </p>
-                <ul class="p-0">
-                  <li class="custom-bullet">
-                    <span class="highlight">Post-Match Follow-Up : </span>
-                  </li>
-                </ul>
-                <p class="servics-para">
-                  She offers continued support to ensure a smooth transition
-                  from matchmaking to marriage, fostering a strong foundation
-                  for the relationship.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container service-section">
-      <div class="row">
-        <div class="col-12">
-          <div class="service-title">
-            Why Choose Priya Shah's Matchmaking Services?
-          </div>
-          <div class="center">
-            <div class="service-description">
-              Discover the perfect blend of tradition and modernity with Priya
-              Shah’s matchmaking services, where love and compatibility go hand
-              in hand. Contact us today to begin your journey towards a happy
-              and fulfilling marriage.
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 p-0">
-          <div class="service-item">
-            <div class="service-icon">
+            <div class="col-md-3">
               <div class="">
-                <img src="./assets/images/Featured icon.png" alt="" />
+                <h5 class="footer-heading">Legal</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-light">Terms & Conditions</a>
+                  </li>
+                  <li><a href="#" class="text-light">Privacy Policy</a></li>
+                  <li><a href="#" class="text-light">Disclaimer</a></li>
+                </ul>
               </div>
             </div>
-            <div class="service-text">
-              <strong>Expertise and Experience</strong><br />
-              <div class="parp">
-                With years of experience and numerous successful matches, Priya
-                Shah is a trusted name in the matchmaking industry.
-              </div>
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="service-icon">
+            <div class="col-md-3">
               <div class="">
-                <img src="./assets/images/Featured icon (1).png" alt="" />
-              </div>
-            </div>
-            <div class="service-text">
-              <strong>Personalized Attention</strong><br />
-              <div class="parp">
-                Priya's approach is highly personalized, ensuring that every
-                match is made with care and consideration.
-              </div>
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="service-icon">
-              <div class="">
-                <img src="./assets/images/Featured icon (2).png" alt="" />
-              </div>
-            </div>
-            <div class="service-text">
-              <strong>Cultural Sensitivity</strong><br />
-              <div class="parp">
-                Understanding the nuances of cultural expectations and
-                traditions, Priya ensures that these are respected throughout
-                the matchmaking process.
-              </div>
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="service-icon">
-              <div class="">
-                <img src="./assets/images/Featured icon (3).png" alt="" />
-              </div>
-            </div>
-            <div class="service-text">
-              <strong>Holistic Approach</strong><br />
-              <div class="parp">
-                By combining the strengths of arranged and love marriages,
-                Priya's approach aims for long-term happiness and satisfaction.
+                <h5 class="footer-heading">
+                  Ready to find your perfect match?
+                </h5>
+                <a href="#" class="btn btn-outline-light mb-3">Contact us, Today!
+                  <span class="ms-4"><i class="fa-regular fa-paper-plane"></i></span></a>
+                <div class="f-13">Phone:</div>
+                <div>+91 70219 15552 | +91 9619600059</div>
+                <div class="f-13 email-under py-1">
+                  themarriagesofindia@hotmail.com
+                </div>
+                <div class="f-13">Business Hours: 10 A.M. to 6 P.M.</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 p-0">
-          <div class="service-image">
-            <img src="./assets/images/Image-2.png" alt="Couple Image" />
-          </div>
-        </div>
-      </div>
+      </footer>
     </div>
+  </div>
+</body>
 
-    <div class="main-footeerr">
-      <div class="pt-3">
-        <div class="upper-footer-background section-5">
-          <div class="upper-footer appointment">
-            <h1 class="ubuntu-font mb-4 pb-3">
-              Are you ready to transform your Marriage and Relationship? Book a
-              session with us
-            </h1>
-            <a href="#" class="">
-              <button>Make an Appointment</button>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bak-img">
-        <img src="/assets/images/footer 1.png" class="w-100" alt="" />
-      </div>
-      <div class="center text-left">
-        <footer class="text-light pt-4 on-media-widthfull">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3 pb-3">
-                <div class="footer-first-col">
-                  <img
-                    src="./assets/images/logo.png.png"
-                    alt="Arrange Love Marriage"
-                    class="img-fluid m-0 footer-logo-img"
-                  />
-                </div>
-
-                <div class="d-flex flex-column mx-2 mt-3">
-                  <div class="f-13">© 2024 Arrange Love Marriage.</div>
-                  <div class="f-13">All Rights Reserved.</div>
-                  <div class="f-13">Made with ❤️ by Fenil Gala.</div>
-                </div>
-                <div class="social-icons mt-4">
-                  <a href="#" class="text-light me-2"
-                    ><i class="fab fa-instagram center pt-2"></i
-                  ></a>
-                  <a href="#" class="text-light me-2"
-                    ><i class="fab fa-facebook-f center pt-2"></i
-                  ></a>
-                  <a href="#" class="text-light me-2"
-                    ><i class="fab fa-twitter center pt-2"></i
-                  ></a>
-                  <a href="#" class="text-light"
-                    ><i class="fab fa-youtube center pt-2"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="ms-lg-5">
-                  <h5 class="footer-heading">Company</h5>
-                  <ul class="list-unstyled">
-                    <li><a href="#" class="text-light">Home</a></li>
-                    <li><a href="#" class="text-light">Our Story</a></li>
-                    <li><a href="#" class="text-light">Services</a></li>
-                    <li><a href="#" class="text-light">Awards</a></li>
-                    <li><a href="#" class="text-light">Success Stories</a></li>
-                    <li><a href="#" class="text-light">Testimonials</a></li>
-                    <li><a href="#" class="text-light">Blog</a></li>
-                    <li><a href="#" class="text-light">FAQs</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="">
-                  <h5 class="footer-heading">Legal</h5>
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="#" class="text-light">Terms & Conditions</a>
-                    </li>
-                    <li><a href="#" class="text-light">Privacy Policy</a></li>
-                    <li><a href="#" class="text-light">Disclaimer</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="">
-                  <h5 class="footer-heading">
-                    Ready to find your perfect match?
-                  </h5>
-                  <a href="#" class="btn btn-outline-light mb-3"
-                    >Contact us, Today!
-                    <span class="ms-4"
-                      ><i class="fa-regular fa-paper-plane"></i></span
-                  ></a>
-                  <div class="f-13">Phone:</div>
-                  <div>+91 70219 15552 | +91 9619600059</div>
-                  <div class="f-13 email-under py-1">
-                    themarriagesofindia@hotmail.com
-                  </div>
-                  <div class="f-13">Business Hours: 10 A.M. to 6 P.M.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-      </div>
-    </div>
-  </body>
 </html>
