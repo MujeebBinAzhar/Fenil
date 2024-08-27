@@ -11,12 +11,61 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <!-- Slick Slider JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/js/js.js" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 30px;
+      z-index: 1;
+      cursor: pointer;
+    }
+
+    .slick-prev {
+      left: -75px;
+      /* Adjust the position as needed */
+    }
+
+
+    .slick-next {
+      right: -25px;
+      /* Adjust the position as needed */
+
+    }
+
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: #6108B2;
+      font-size: 30px;
+    }
+
+    .img-fluid-1 {
+      max-height: 200px;
+      /* Adjust this value as needed for logo size */
+    }
+    .artical-thumb{
+      width: 340px;
+    }
+    .artical-feature-img img{
+      width: 100% !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -141,7 +190,7 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="./faqs.html">FAQs</a></li>
                 <li>
-                  <a class="dropdown-item" href="/alm-promise.html">ALM Promise</a>
+                  <a class="dropdown-item" href="/alm-promise.html">Our Promise</a>
                 </li>
                 <li><a class="dropdown-item" href="/blog.html">Blog</a></li>
                 <li>
@@ -159,10 +208,13 @@
 
   <div class="bg-lightgra">
     <div class="container news-section">
-      <h2 class="text-center">Media</h2>
+
+      <div class="Award-content text-center" style="margin: 0;">
+        <h2 class="py-3 text-capital color-purpel"> Media</h2>
+      </div>
       <div class="center w-100">
         <div class="col-lg-8">
-          <p>
+          <p style="font-size: 18px;" class="poppins-font ">
             Explore the extensive media coverage of Priya Shah's remarkable
             journey and expertise in matchmaking. As India's premier
             matchmaker, Priya Shah has been featured in numerous articles and
@@ -260,35 +312,121 @@
 
   <section class="feature over-flow-hidden">
     <div class="container mt-5">
-      <div class="underlined-heading">
-        <h2>AS FEATURED IN</h2>
-      </div>
-      <div class="logo-gallery">
-        <div class="main d-flex flex-wrap">
-          <div class="sub-logo">
-            <img src="./assets/images/forbes.png" width="100%" alt="" />
+      <h2 class="mb-4 color-purpel center" style="font-weight: 700;">AS FEATURED IN</h2>
+      <div class="container text-center my-5">
+        <div class="row align-items-center center">
+          <div class="col-6 col-md-4 col-lg-3 mb-4">
+            <img src="./assets/images/The Times Of India Logo.png" alt="The Economic Times" class="img-fluid-1">
           </div>
-          <div class="sub-logo">
-            <img src="./assets/images/timeindia.png" width="100%" alt="" />
+          <div class="col-6 col-md-4 col-lg-3 mb-4">
+            <img src="./assets/images/The Indian Express - Logo.jpg" alt="YourStory" class="img-fluid-1">
           </div>
-          <div class="sub-logo">
-            <img src="./assets/images/express.png" width="100%" alt="" />
+          <div class="col-6 col-md-4 col-lg-3 mb-4">
+            <img src="./assets/images/FEMINA Logo.jpg" alt="The Times of India" class="img-fluid-1">
           </div>
-          <div class="sub-logo">
-            <img src="./assets/images/hindustan.png" width="100%" alt="" />
+          <div class="col-6 col-md-4 col-lg-3 mb-4">
+            <img src="./assets/images/Mid-day Logo.png" alt="Inc42" class="img-fluid-1">
           </div>
-          <div class="sub-logo">
-            <img src="./assets/images/femina.png" width="100%" alt="" />
+          <div class="col-6 col-md-4 col-lg-3 mb-4">
+            <img src="./assets/images/Forbes India Logo.png" alt="Inshorts" class="img-fluid-1">
           </div>
+          <div class="col-6 col-md-4 col-lg-3 mb-4">
+            <img src="./assets/images/Hindustan Times Logo.png" alt="Business Standard" class="img-fluid-1">
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 mb-4">
+            <img src="./assets/images/Medium Logo.png" alt="Mint" class="img-fluid-1">
+          </div>
+
         </div>
       </div>
     </div>
   </section>
 
-  <div class="bg-lightgra">
+  <section class="alm-promise bg-lightgra py-5">
+    <div class="container position-relative my-4">
+      <div class="text-center color-purpel ">
+        <h2 class="mb-4 color-purpel center" style="font-weight: 700;">OUR PROMISE</h2>
+        
+      </div>
+      <!-- New slider wrapper -->
+      <div class="promise-slider row justify-content-center  mt-3">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <a target="_blank" class="center" href="./assets/images/home-articles/Home Page Article Forbes 1.pdf">
+            <div class="artical-thumb">
+              <img class="artical-feature-img" src="./assets/images/artical-1.png" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <a target="_blank" class="center" href="./assets/images/home-articles/Home Page Article Forbes 1.pdf">
+            <div class="artical-thumb">
+              <img class="artical-feature-img" src="./assets/images/artical-1.png" alt="" />
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <a target="_blank" class="center" href="./assets/images/home-articles/Home Page Article Forbes 1.pdf">
+            <div class="artical-thumb">
+              <img class="artical-feature-img" src="./assets/images/artical-1.png" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <a target="_blank" class="center" href="./assets/images/home-articles/Home Page Article Forbes 1.pdf">
+            <div class="artical-thumb">
+              <img class="artical-feature-img" src="./assets/images/artical-1.png" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <a target="_blank" class="center" href="./assets/images/home-articles/Home Page Article Forbes 1.pdf">
+            <div class="artical-thumb">
+              <img class="artical-feature-img" src="./assets/images/artical-1.png" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <a target="_blank" class="center" href="./assets/images/home-articles/Home Page Article Forbes 1.pdf">
+            <div class="artical-thumb">
+              <img class="artical-feature-img" src="./assets/images/artical-1.png" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <a target="_blank" class="center" href="./assets/images/home-articles/Home Page Article Forbes 1.pdf">
+            <div class="artical-thumb">
+              <img class="artical-feature-img" src="./assets/images/artical-1.png" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <a target="_blank" class="center" href="./assets/images/home-articles/Home Page Article Forbes 1.pdf">
+            <div class="artical-thumb">
+              <img class="artical-feature-img" src="./assets/images/artical-1.png" alt="" />
+            </div>
+          </a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <!-- Add Previous and Next Buttons -->
+      <button class="slick-prev" aria-label="Previous" type="button">Previous</button>
+      <button class="slick-next" aria-label="Next" type="button">Next</button>
+    </div>
+  </section>
+
+  <div class=" ">
     <div class="container py-5 coverage">
-      <h2 class="mb-4">All Press Coverage</h2>
-      <h5 class="mb-3">Funding</h5>
+      <h2 class="mb-4 color-purpel center" style="font-weight: 700;">Other Media Articles</h2>
+
       <div class="row">
         <div class="col-md-4 mb-4">
           <a href="https://openthemagazine.com/features/living/wedding-knells/" target="_blank">
@@ -296,8 +434,8 @@
               <div class="card-body">
                 <img src="./assets/images/Media Articles Images/Open The Magazine.jpg" class="img-fluid mb-2 radius-15"
                   alt="Economic Times" />
-                <p class="cato">Open The Magazine</p>
-                <p class="artical-card-text">Wedding Knells</p>
+                <!-- <p class="cato">Open The Magazine</p> -->
+                <p class="artical-card-text">Wedding Kne pt-3lls</p>
               </div>
             </div>
           </a>
@@ -309,8 +447,8 @@
               <div class="card-body">
                 <img src="./assets/images/Media Articles Images/Deccan Chronicle.jpg" class="img-fluid mb-2 radius-15"
                   alt="Economic Times" />
-                <p class="cato">Deccan Chronicle</p>
-                <p class="artical-card-text">
+                <!-- <p class="cato">Deccan Chronicle</p> -->
+                <p class="artical-card-text pt-3">
                   Make No Mistake Is the Motto of Her Matchmaking
                 </p>
               </div>
@@ -324,8 +462,8 @@
               <div class="card-body">
                 <img src="./assets/images/Media Articles Images/The Entrepreneurs of India.jpg"
                   class="img-fluid mb-2 radius-15" alt="Economic Times" />
-                <p class="cato">The Entrepreneurs of India</p>
-                <p class="artical-card-text">
+                <!-- <p class="cato">The Entrepreneurs of India</p> -->
+                <p class="artical-card-text pt-3">
                   This Entrepreneur- Matchmaker has changed the way marriages
                   work in Modern times...
                 </p>
@@ -339,8 +477,8 @@
               <div class="card-body">
                 <img src="./assets/images/Media Articles Images/Midday 1.jpg" class="img-fluid mb-2 radius-15"
                   alt="Economic Times" />
-                <p class="cato">Midday</p>
-                <p class="artical-card-text">
+                <!-- <p class="cato">Midday</p> -->
+                <p class="artical-card-text pt-3">
                   Renowned Matchmaker Priya Shah
                 </p>
               </div>
@@ -355,8 +493,8 @@
               <div class="card-body">
                 <img src="./assets/images/Media Articles Images/The Times Of India.jpg" class="img-fluid mb-2 radius-15"
                   alt="Economic Times" />
-                <p class="cato">The Times Of India</p>
-                <p class="artical-card-text">Matchmaking in the modern age</p>
+                <!-- <p class="cato">The Times Of India</p> -->
+                <p class="artical-card-text pt-3">Matchmaking in the modern age</p>
               </div>
             </div>
           </a>
@@ -368,8 +506,8 @@
               <div class="card-body">
                 <img src="./assets/images/Media Articles Images/Sangri Times.jpg" class="img-fluid mb-2 radius-15"
                   alt="Economic Times" />
-                <p class="cato">Sangri Times</p>
-                <p class="artical-card-text">
+                <!-- <p class="cato">Sangri Times</p> -->
+                <p class="artical-card-text pt-3">
                   Dr. Priya Shah: Matchmaker & Proponent of Love
                 </p>
               </div>
@@ -383,8 +521,8 @@
               <div class="card-body">
                 <img src="./assets/images/Media Articles Images/Medium.jpg" class="img-fluid mb-2 radius-15"
                   alt="Economic Times" />
-                <p class="cato">Medium</p>
-                <p class="artical-card-text">
+                <!-- <p class="cato">Medium</p> -->
+                <p class="artical-card-text pt-3">
                   Meet your Ultimate Match with Priya Shah, the Matchmaker
                 </p>
               </div>
@@ -398,8 +536,8 @@
               <div class="card-body">
                 <img src="./assets/images/Media Articles Images/Event Faqs.jpg" class="img-fluid mb-2 radius-15"
                   alt="Economic Times" />
-                <p class="cato">Event Faqs</p>
-                <p class="artical-card-text">
+                <!-- <p class="cato">Event Faqs</p> -->
+                <p class="artical-card-text pt-3">
                   Touchwood Entertainment: Virtual ’Matchmakers Conclave’
                 </p>
               </div>
@@ -413,8 +551,8 @@
               <div class="card-body">
                 <img src="./assets/images/Media Articles Images/ED Times.jpg" class="img-fluid mb-2 radius-15"
                   alt="Economic Times" />
-                <p class="cato">ED Times</p>
-                <p class="artical-card-text">
+                <!-- <p class="cato">ED Times</p> -->
+                <p class="artical-card-text pt-3">
                   Dr. Priya Shah, An Elite Matchmaker
                 </p>
               </div>
@@ -428,8 +566,8 @@
               <div class="card-body">
                 <img src="./assets/images/Media Articles Images/IB Times.jpg" class="img-fluid mb-2 radius-15"
                   alt="Economic Times" />
-                <p class="cato">IB Times</p>
-                <p class="artical-card-text">
+                <!-- <p class="cato">IB Times</p> -->
+                <p class="artical-card-text pt-3">
                   HBW News honors Barack Obama, Deepika Padukone and
                   Matchmaker Priya Shah
                 </p>
@@ -444,8 +582,8 @@
               <div class="card-body">
                 <img src="./assets/images/Media Articles Images/Midday 2.jpg" class="img-fluid mb-2 radius-15"
                   alt="Economic Times" />
-                <p class="cato">Midday</p>
-                <p class="artical-card-text">
+                <!-- <p class="cato">Midday</p> -->
+                <p class="artical-card-text pt-3">
                   The Number One Wedding Matchmaker in India and Abroad
                 </p>
               </div>
@@ -509,7 +647,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
               <div class="">
                 <h5 class="footer-heading">Legal</h5>
                 <ul class="list-unstyled">
@@ -517,21 +655,26 @@
                     <a href="#" class="text-light">Terms & Conditions</a>
                   </li>
                   <li><a href="#" class="text-light">Privacy Policy</a></li>
-                  <li><a href="#" class="text-light">Disclaimer</a></li>
+
                 </ul>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
               <div class="">
                 <h5 class="footer-heading">
-                  Ready to find your perfect match?
+                  Ready to find your <br> perfect match?
                 </h5>
                 <a href="#" class="btn btn-outline-light mb-3">Contact us, Today!
                   <span class="ms-4"><i class="fa-regular fa-paper-plane"></i></span></a>
-                <div class="f-13">Phone:</div>
-                <div>+91 70219 15552 | +91 9619600059</div>
-                <div class="f-13 email-under py-1">
-                  themarriagesofindia@hotmail.com
+
+                <div class="text-light f-13">
+                  Phone: +91 70219 15552 | +91 9619600059
+                </div>
+
+                <div class="f-13 py-1">
+                  Email:
+                  <a class="text-decoration-underline"
+                    href="mailto:themarriagesofindia@hotmail.com">themarriagesofindia@hotmail.com</a>
                 </div>
                 <div class="f-13">Business Hours: 10 A.M. to 6 P.M.</div>
               </div>
@@ -541,6 +684,37 @@
       </footer>
     </div>
   </div>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.promise-slider').slick({
+        slidesToShow: 3,  // Show three slides at a time
+        slidesToScroll: 1, // Scroll one slide at a time
+        infinite: true,    // Infinite scrolling
+        dots: false,        // Show navigation dots
+        arrows: true,      // Use arrows for navigation
+        prevArrow: $('.slick-prev'), // Custom previous button
+        nextArrow: $('.slick-next'), // Custom next button
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+        ]
+      });
+    });
+  </script>
 </body>
 
 </html>
