@@ -279,12 +279,13 @@ p{
 /* services css */
 
 .bg-lightgra {
+    padding-top: 2rem ;
     background-color: #F7EEFF;
 }
 
 .font-services {
-    font-size: 64px;
-    font-weight: 800;
+    font-size: 50px;
+    font-weight: 700;
     width: 102%;
 }
 
@@ -511,7 +512,7 @@ p{
     justify-content: center;
     align-items: center;
     height: 25vh;
-    margin: 40px 0px 40px 0px;
+  
     background-color: #EAD2FF;
     /* Light purple background */
 }
@@ -2688,9 +2689,7 @@ footer .btn-outline-light:hover {
         width: 73% !important;
     }
 
-    .upper-footer-background {
-        height: 35vh;
-    }
+   
 
     .indx-footer {
         margin-top: 30% !important;
@@ -3090,9 +3089,7 @@ footer a{
         line-height: 28px;
     }
 
-    .upper-footer-background {
-        height: 35vh;
-    }
+   
 
     .footer-bak-img {
         display: none;
