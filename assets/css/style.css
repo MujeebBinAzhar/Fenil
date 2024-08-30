@@ -2667,9 +2667,7 @@ footer .btn-outline-light:hover {
         width: 75% !important;
     }
 
-    .upper-footer-background {
-        height: 25vh;
-    }
+ 
 
     .indx-footer {
         margin-top: 35% !important;
@@ -2918,6 +2916,9 @@ footer a{
 }
 
 @media only screen and (max-width: 992px) {
+    .upper-footer-background{
+        height: 35vh;
+    }
 
     .hero-heading h1:nth-child(1) {
         font-size: 50px;
@@ -3109,7 +3110,7 @@ footer a{
     }
 
     .upper-footer {
-        margin-bottom: -125px;
+        margin-bottom: -50px;
     }
 
     .footer-first-col {
@@ -3201,7 +3202,7 @@ footer a{
 
 @media only screen and (max-width: 490px) {
     .upper-footer {
-        margin-bottom: -110px;
+        margin-bottom: -37px;
     }
 }
 
