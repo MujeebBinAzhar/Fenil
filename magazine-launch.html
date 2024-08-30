@@ -57,6 +57,18 @@
         .magzin-background{
             background-color: #F7EEFF; margin: 60px 0px;
         }
+        @media only screen and (max-width: 550px) {
+        #image-container img{
+            margin: 7px!important;
+        }
+        .to-sec-img {
+            width: 99%;
+            margin-bottom: 20px;
+        }
+        .med-wid{
+            width: 100% !important;
+        }
+    }
     </style>
 </head>
 
@@ -229,7 +241,7 @@
 
     <section class=" py-5 magzin-background" >
         <div class="container">
-            <div class="row w-100 py-4 ">
+            <div class="d-flex flex-wrap w-100 py-4 ">
                 <div class="col-lg-6 center">
                     <img src="./assets/images/Magazine Launch Event/2.png" class="to-sec-img" alt="">
                 </div>
@@ -244,9 +256,9 @@
                     </p>
                 </div>
             </div>
-            <div class="row w-100  py-4 mt-3" >
+            <div class="d-flex flex-wrap w-100  py-4 mt-3" >
                 <div class="col-lg-6 center">
-                    <p style="width: 70%; text-align: left!important;">
+                    <p class="med-wid" style="width: 70%; text-align: left!important;">
                         A bridal fashion show by Ojasvita featuring diamond jewellery by Urja Creations Pvt. Ltd. added
                         glitter and glamour to the evening.
                     </p>
@@ -311,7 +323,7 @@
         <p clas="">After the Programme a lavish dinner was spread for the invitees. There were photographers & print
             media from all respectable channels and newspapers to cover one of the most memorable evenings of the year.
         </p>
-        <div class="row center" id="image-container"></div>
+        <div class="row center px-3" id="image-container"></div>
         <div class="text-center my-4">
 
             <div id="load-more" class=""></div>

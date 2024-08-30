@@ -3208,6 +3208,9 @@ footer a{
     .sub-logo {
         width: 40% !important;
     }
+    .img-75-width {
+        margin: 0px 0px 10px 0px !important;
+    }
 }
 
 
@@ -3217,6 +3220,10 @@ footer a{
         padding: 3px 10px;
         font-size: 12px;
     }
+    .order-min{
+        order: -1;
+    }
+  
 
     .our-story {
         margin-top: -341px;
