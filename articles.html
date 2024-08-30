@@ -904,18 +904,20 @@
                 src="./assets/images/archive/article8.jpg"
                 class="img-fluid mb-2 radius-15"
                 alt="Economic Times"
+                onclick="openLightbox(this)"
               />
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 mb-4">
-          <div class="card shadow-sm">
+          <div class="card shadow-sm h-100">
             <div class="card-body">
               <img
                 src="./assets/images/archive/article9.jpg"
                 class="img-fluid mb-2 radius-15"
                 alt="Economic Times"
+                onclick="openLightbox(this)"
               />
             </div>
           </div>
@@ -928,10 +930,12 @@
                 src="./assets/images/archive/article10.jpg"
                 class="img-fluid mb-2 radius-15"
                 alt="Economic Times"
+                onclick="openLightbox(this)"
               />
             </div>
           </div>
         </div>
+
         <div class="col-lg-4 mb-4">
           <div class="card shadow-sm">
             <div class="card-body">
@@ -939,10 +943,12 @@
                 src="./assets/images/archive/article11.jpg"
                 class="img-fluid mb-2 radius-15"
                 alt="Economic Times"
+                onclick="openLightbox(this)"
               />
             </div>
           </div>
         </div>
+
         <div class="col-lg-4 mb-4">
           <div class="card shadow-sm">
             <div class="card-body">
@@ -950,10 +956,12 @@
                 src="./assets/images/archive/article12.jpg"
                 class="img-fluid mb-2 radius-15"
                 alt="Economic Times"
+                onclick="openLightbox(this)"
               />
             </div>
           </div>
         </div>
+
         <div class="col-lg-4 mb-4">
           <div class="card shadow-sm">
             <div class="card-body">
@@ -961,10 +969,16 @@
                 src="./assets/images/archive/article13.jpg"
                 class="img-fluid mb-2 radius-15"
                 alt="Economic Times"
+                onclick="openLightbox(this)"
               />
             </div>
           </div>
         </div>
+      </div>
+
+      <div id="lightboxModal" class="lightbox-modal">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightboxImage" />
       </div>
     </div>
 
@@ -1132,6 +1146,21 @@
           ],
         });
       });
+    </script>
+
+    <script>
+      function openLightbox(img) {
+        const modal = document.getElementById("lightboxModal");
+        const modalImg = document.getElementById("lightboxImage");
+
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      }
+
+      function closeLightbox() {
+        const modal = document.getElementById("lightboxModal");
+        modal.style.display = "none";
+      }
     </script>
   </body>
 </html>
