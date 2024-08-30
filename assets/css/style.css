@@ -45,7 +45,10 @@
     font-display: swap;
 }
 
-
+.mobile-video{
+    width:640px;
+    height:480px
+}
 .f18{
     font-size: 18px;
 }
@@ -2750,7 +2753,7 @@ footer .btn-outline-light:hover {
 
     .inner-div span {
         font-family: "Poppins", sans-serif;
-        font-size: 50px;
+        font-size: 45px;
         font-weight: 300;
         line-height: 65px;
         text-align: left;
@@ -2763,7 +2766,7 @@ footer .btn-outline-light:hover {
         border-radius: 0px 87px 87px 0px;
         padding: 15px 40px 0px 130px;
         font-family: "Poppins", sans-serif;
-        font-size: 50px;
+        font-size: 45px;
         font-weight: 700;
         line-height: 65px;
 
@@ -3004,6 +3007,13 @@ footer a{
 }
 
 @media only screen and (max-width: 768px) {
+
+    .mobile-video{
+        height: unset;
+        max-height: 260px !important;
+        width: 100%;
+
+    }
     br {
         display: none;
     }
@@ -3063,6 +3073,11 @@ footer a{
     .inner-div {
         padding-left: 10px;
         font-size: 40px;
+        list-style: 1.2;
+    }
+
+    .inner-div span{
+        font-size: 31px;
     }
 
     .award-card-gallery {
