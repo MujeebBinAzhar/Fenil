@@ -45,6 +45,14 @@
     font-display: swap;
 }
 
+
+.f18{
+    font-size: 18px;
+}
+
+.fw-500{
+    font-weight: 600 !important;
+}
 @font-face {
     font-family: 'FONTSPRING DEMO - The Seasons';
     src: url('../font/FONTSPRINGDEMO-TheSeasonsLightItalic.woff2') format('woff2'),
@@ -2450,7 +2458,7 @@ footer .btn-outline-light:hover {
 }
 
 .info-wrap .dbox p a {
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 1);
 }
 
 .info-wrap .dbox .icon {
