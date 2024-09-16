@@ -66,6 +66,10 @@
 }
 
 
+body{
+    overflow-x: hidden;
+}
+
 
 :root {
     --color-text: hsl(248, 10%, 40%);
@@ -667,7 +671,7 @@ footer .btn-outline-light:hover {
 }
 
 .home-hero {
-    background-image: url(/assets/images/home-hero.png);
+    background-image: url('../images/home-hero.png');
     width: 100%;
     height: 1208px;
     background-repeat: no-repeat;
@@ -800,7 +804,9 @@ footer .btn-outline-light:hover {
 
 /*  */
 .about-hero {
-    background-image: url(/assets/images/Web-Main_About\ 1.png);
+
+    
+    background-image: url('../images/Web-Main_About_1.png');
     width: 100%;
     height: 110%;
     background-position: center;
